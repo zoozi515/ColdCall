@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXe-Wt-ZKj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Names" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXe-Wt-ZKj">
                                 <rect key="frame" x="20" y="64" width="374" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
@@ -45,20 +45,36 @@
                                     <action selector="coldCallPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2h-p5-nXa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umd-VP-DaD">
+                                <rect key="frame" x="164" y="366.5" width="86.5" height="163.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="144" name="CourierNewPS-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Umd-VP-DaD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="62y-cm-NO7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yXe-Wt-ZKj" secondAttribute="trailing" constant="20" id="Iop-ER-xe8"/>
                             <constraint firstItem="yXe-Wt-ZKj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MJu-Rs-hEv"/>
                             <constraint firstItem="yXe-Wt-ZKj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Wcj-z3-B1G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pRq-fU-PDC" secondAttribute="bottom" constant="30" id="hYW-ld-Ohh"/>
                             <constraint firstItem="yXe-Wt-ZKj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sep-88-azW"/>
                             <constraint firstItem="pRq-fU-PDC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xf0-Xd-G4A"/>
+                            <constraint firstItem="Umd-VP-DaD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y0m-sQ-KAt"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="namesLabel" destination="yXe-Wt-ZKj" id="XHh-Oh-lw9"/>
+                        <outlet property="numbersLabel" destination="Umd-VP-DaD" id="ewY-9G-w8Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
